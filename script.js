@@ -8,21 +8,21 @@ const projects = [
     desc: "Application permettant aux étudiants de s'inscrire en ligne, avec gestion des candidatures et des dossiers.",
     tags: ["PHP", "MySQL", "HTML", "CSS"],
     image: "school.png",
-    link: "max-school.atwebpages.com"
+    link: "http://max-school.atwebpages.com"
   },
   {
     title: "Site de réservation de chambre d'hôtel",
     desc: "Plateforme de réservation de chambres avec disponibilité, inscription, connexion et gestion des réservations.",
     tags: ["PHP", "MySQL", "JavaScript", "CSS"],
     image: "hotel.png",
-    link: "med-hotels.atwebpages.com"
+    link: "http://med-hotels.atwebpages.com"
   },
   {
     title: "Bibliothèque en ligne",
     desc: "Application de gestion et de consultation de livres en ligne, avec ajout, modification, suppression et recherche.",
     tags: ["PHP", "MySQL", "HTML", "CSS"],
     image: "biblio.png",
-    link: "biblio-net.atwebpages.com"
+    link: "http://biblio-net.atwebpages.com"
   },
   {
     title: "Site e-commerce",
