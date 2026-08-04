@@ -1,79 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Maxime</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AKAKPO Maxime Espoir — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>AKAKPO Maxime Espoir</h1>
-    <p>Étudiant en développement d'applications</p>
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>AKAKPO Maxime Espoir</h1>
+      <p class="hero-subtitle">Étudiant en développement d'applications</p>
+      <p class="hero-desc">Passionné par le développement web et mobile.<br>Je crée des applications modernes, performantes et utiles.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary" id="download-cv">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+          Télécharger mon CV
+        </a>
+        <a href="https://github.com/MaximeEspoir" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.94c.58.1.79-.25.79-.56v-2.17c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+          Voir mon GitHub
+        </a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-ring">
+        <span>AE</span>
+      </div>
+    </div>
+  </div>
 </header>
 
-<nav>
-    <a href="#apropos">À propos</a>
-    <a href="#competences">Compétences</a>
-    <a href="#projets">Projets</a>
-    <a href="#contact">Contact</a>
+<!-- NAV -->
+<nav class="navbar">
+  <ul>
+    <li><a href="#about" class="active"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>À propos</a></li>
+    <li><a href="#skills"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/></svg>Compétences</a></li>
+    <li><a href="#projects"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h5l2-2h4l2 2h5v12H3z"/></svg>Projets</a></li>
+    <li><a href="#contact"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Contact</a></li>
+  </ul>
 </nav>
 
-<section id="apropos">
-    <h2>À propos</h2>
-    <p>
-        Je suis étudiant en développement d'applications.
-        Je développe des applications web avec PHP, MySQL,
-        HTML, CSS et Java.
-    </p>
-</section>
-
-<section id="competences">
-    <h2>Compétences</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>PHP</li>
-        <li>MySQL</li>
-        <li>Java</li>
-        <li>C++</li>
-        <li>C</li>
-        <li>Wordpress</li>
-    </ul>
-</section>
-
-<section id="projets">
-    <h2>Mes projets</h2>
-
-    <div class="projet">
-        <h3>Site de réservation de restaurant</h3>
-        <p>Application de réservation avec inscription et connexion.</p>
+<main>
+  <!-- ABOUT + SKILLS -->
+  <section class="split-section">
+    <div id="about" class="about-block">
+      <h2><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/></svg>À propos</h2>
+      <p>Je suis étudiant en développement d'applications. Je développe des applications web avec PHP, MySQL, HTML, CSS et Java.
+      J'aime résoudre des problèmes et construire des solutions numériques qui facilitent la vie.</p>
     </div>
+    <div id="skills" class="skills-block">
+      <h2><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M5 3h14l-1 9a6 6 0 0 1-12 0L5 3Z"/></svg>Compétences</h2>
+      <div class="skills-grid">
+        <span class="skill-pill"><i class="tag tag-html">5</i>HTML</span>
+        <span class="skill-pill"><i class="tag tag-css">3</i>CSS</span>
+        <span class="skill-pill"><i class="tag tag-js">JS</i>JavaScript</span>
+        <span class="skill-pill"><i class="tag tag-php">php</i>PHP</span>
+        <span class="skill-pill"><i class="tag tag-mysql">🐬</i>MySQL</span>
+        <span class="skill-pill"><i class="tag tag-java">☕</i>Java</span>
+        <span class="skill-pill"><i class="tag tag-git">🐙</i>Git &amp; GitHub</span>
+        <span class="skill-pill"><i class="tag tag-bootstrap">B</i>Bootstrap</span>
+        <span class="skill-pill"><i class="tag tag-c">C</i>C</span>
+        <span class="skill-pill"><i class="tag tag-jquery">jQ</i>jQuery</span>
+      </div>
+    </div>
+  </section>
 
-    <div class="projet">
-        <h3>Bibliothèque en ligne</h3>
-        <p>Site avec des livres et documents de plusieurs domaines.</p>
-    </div>
-    <div class="projet">
-        <h3>Site d'inscription dans une université</h3>
-        <p>Inscription dans une école d'enseignement supérieur</p>
-    </div>
-    <div class="projet">
-        <h3>E-commerce</h3>
-        <p>Site de ventes en ligne</p>
-    </div>
-</section>
+  <!-- PROJECTS -->
+  <section id="projects" class="projects-section">
+    <h2><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h5l2-2h4l2 2h5v12H3z"/></svg>Projets</h2>
+    <div class="projects-grid" id="projects-grid"></div>
+  </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email : maximilianoakp2007@outlook.com</p>
-    <a href="wa.me/22893883707">Mon numéro whatsapp</a>
-</section>
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <h2><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Contact</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <div><strong>Email</strong><span>maximeespoir@example.com</span></div>
+      </div>
+      <div class="contact-card">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.86.32 1.71.6 2.53a2 2 0 0 1-.45 2.11L8.09 9.53a16 16 0 0 0 6 6l1.17-1.17a2 2 0 0 1 2.11-.45c.82.28 1.67.48 2.53.6A2 2 0 0 1 22 16.92z"/></svg>
+        <div><strong>Téléphone</strong><span>+228 90 12 34 56</span></div>
+      </div>
+      <div class="contact-card">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><strong>Localisation</strong><span>Lomé, Togo</span></div>
+      </div>
+      <div class="contact-card">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.94c.58.1.79-.25.79-.56v-2.17c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+        <div><strong>GitHub</strong><span>github.com/MaximeEspoir</span></div>
+      </div>
+      <div class="contact-card">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        <div><strong>LinkedIn</strong><span>linkedin.com/in/maximeespoir</span></div>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
-    <p>© 2026 Maxime</p>
+  <p>© <span id="year"></span> AKAKPO Maxime Espoir — Tous droits réservés.</p>
 </footer>
 
 <script src="script.js"></script>
