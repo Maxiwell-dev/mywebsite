@@ -29,7 +29,7 @@ const projects = [
     desc: "Boutique en ligne avec panier, catégories, produits et gestion des commandes.",
     tags: ["PHP", "MySQL", "JavaScript", "CSS"],
     image: "ecommerce.png",
-    link: "#"
+    link: "https://lebaobab.onlinewebshop.net"
   }
 ];
 
@@ -87,9 +87,8 @@ function setupFooterYear() {
 
 // ---- Bouton "Télécharger mon CV" ----
 function setupCvButton() {
-  document.getElementById("download-cv").addEventListener("click", e => {
+  document.getElementById("cv.pdf").addEventListener("click", e => {
     e.preventDefault();
-    alert("Ajoute le lien vers ton fichier CV.pdf dans le bouton (id=\"download-cv\") pour activer le téléchargement.");
   });
 }
 
